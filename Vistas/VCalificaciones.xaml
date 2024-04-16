@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoasaT2.Vistas.VCalificaciones"
+             Title="VCalificaciones">
+    <VerticalStackLayout Margin="10">
+        <Picker x:Name="pckEstudiantes" Title="Elige un estudiante">
+            <Picker.Items>
+                <x:String>Wilson Cajisaca</x:String>
+                <x:String>Paola Oña</x:String>
+                <x:String>Andres Haro</x:String>
+                <x:String>Jesus Abarca</x:String>
+                <x:String>Diego Villavicencio</x:String>
+            </Picker.Items>
+        </Picker>
+        <BoxView HeightRequest="25" BackgroundColor="White" />
+        <Label Text="PARCIARL 1"/>
+        <Entry x:Name="etrNotaSeg1" Placeholder="INGRESE LA NOTA SEGUIMIENTO 1"/>
+        <Entry x:Name="etrNotaExamen1" Placeholder="INGRESE LA NOTA DEL EXAMEN 1"/>
+        <BoxView HeightRequest="25" BackgroundColor="White" />
+        <Label Text="PARCIARL 2"/>
+        <Entry x:Name="etrNotaSeg2" Placeholder="INGRESE LA NOTA SEGUIMIENTO 2"/>
+        <Entry x:Name="etrNotaExamen2" Placeholder="INGRESE LA NOTA DEL EXAMEN 2"/>
+        <BoxView HeightRequest="10" BackgroundColor="White" />
+        <DatePicker x:Name="pckDate" Format="dd/MMMM/yyyy" />
+        <BoxView HeightRequest="25" BackgroundColor="White" />
+        <Button Text="Calcular" 
+                Clicked="OnCalcularButtonClicked" />
+    </VerticalStackLayout>
+</ContentPage>
